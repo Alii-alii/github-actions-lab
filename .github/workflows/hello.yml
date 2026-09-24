@@ -1,7 +1,4 @@
-      - name: Install pytest
-        run: pip install pytest
-      - name: Run tests
-        run: pytestname: Hello GitHub Actions
+name: Hello GitHub Actions
 
 on:
   push:
@@ -19,3 +16,7 @@ jobs:
           python-version: '3.x'
       - name: Run hello script
         run: python hello.py
+      - name: Install pytest
+        run: pip install pytest
+      - name: Run tests
+        run: pytest
